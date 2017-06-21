@@ -1,0 +1,14 @@
+{
+    "name": "santacord/feomax",
+    "type": "project",
+    "authors": [
+        {
+            "name": "SantaCord",
+            "email": "feofanov-mv@yandex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    }
+}

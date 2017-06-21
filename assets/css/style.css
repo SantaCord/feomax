@@ -1,0 +1,29 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+	font-size: 14px;
+	background: #ececec;
+	color: #333333;
+}
+.thumbnail {
+	width: 25%;
+    float: left;
+    margin-right: 15px;
+}
+.section-header {
+	line-height: 50px;
+}
+.img-container {
+	width: 100%;
+	max-width: 1100px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.img-container img {
+	display: inline;
+}
+p.article-text {
+	text-align: justify;
+	margin-bottom: 40px;
+}
