@@ -3,7 +3,9 @@
 namespace core\base;
 
 
-class BaseController
+use core\Object;
+
+class BaseController extends Object
 {
     private $_controller = 'app\controllers\MainController';
     private $_action = '';
@@ -38,13 +40,5 @@ class BaseController
     public function setController($controller)
     {
         $this->_controller = $controller;
-    }
-
-    public function __call($method, $params)
-    {
-        $method = (string) 'get'.ucfirst($method);
-        $method = (method_exists($this, $method)) ? $method : NULL;
-
-        call_user_func_array([$this, $method], $params);
     }
 }
