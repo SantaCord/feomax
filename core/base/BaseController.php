@@ -45,9 +45,6 @@ class BaseController
         $method = (string) 'get'.ucfirst($method);
         $method = (method_exists($this, $method)) ? $method : NULL;
 
-        return $this->$method();
-
-//        debug($name).'<br>';
-//        debug($params).'<br>';
+        call_user_func_array([$this, $method], $params);
     }
 }
